@@ -1,0 +1,6 @@
+D:\_projects\wtfidk\modern ksp\_coyote_mods\MenuAnnihilatious\MenuAnnihilatious\obj\Debug\net3.5\MenuAnnihilatious.csproj.AssemblyReference.cache
+D:\_projects\wtfidk\modern ksp\_coyote_mods\MenuAnnihilatious\MenuAnnihilatious\obj\Debug\net3.5\MenuAnnihilatious.GeneratedMSBuildEditorConfig.editorconfig
+D:\_projects\wtfidk\modern ksp\_coyote_mods\MenuAnnihilatious\MenuAnnihilatious\obj\Debug\net3.5\MenuAnnihilatious.AssemblyInfoInputs.cache
+D:\_projects\wtfidk\modern ksp\_coyote_mods\MenuAnnihilatious\MenuAnnihilatious\obj\Debug\net3.5\MenuAnnihilatious.AssemblyInfo.cs
+D:\_projects\wtfidk\modern ksp\_coyote_mods\MenuAnnihilatious\MenuAnnihilatious\obj\Debug\net3.5\MenuAnnihilatious.csproj.CoreCompileInputs.cache
+D:\_projects\wtfidk\modern ksp\_coyote_mods\MenuAnnihilatious\MenuAnnihilatious\obj\Debug\net3.5\MenuAnnihilatious.sourcelink.json
