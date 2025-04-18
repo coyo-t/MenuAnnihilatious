@@ -1,4 +1,5 @@
 ﻿using Atmosphere;
+using EVEManager;
 using HarmonyLib;
 using UnityEngine;
 
@@ -15,6 +16,16 @@ public class EVECloudsNullifier : MonoBehaviour
 	}
 }
 
+
+[HarmonyPatch(typeof(GlobalEVEManager), "Update")]
+class ShSet
+{
+	static bool Prefix(DynamicShadowSettings __instance)
+	{
+		return HighLogic.LoadedScene != GameScenes.MAINMENU;
+	}
+	
+}
 
 [HarmonyPatch(typeof(CloudsPQS), "ApplyToMainMenu")]
 class CloudsPQSPatch

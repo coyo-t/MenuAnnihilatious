@@ -29,6 +29,7 @@ class MenuPatch
 	}
 }
 
+
 [HarmonyPatch(typeof(Scatterer.Scatterer), "LoadSettings")]
 class ConfigHackRemover
 {
