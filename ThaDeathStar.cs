@@ -6,7 +6,7 @@ namespace MenuAnnihilatious;
 
 
 [KSPAddon(KSPAddon.Startup.MainMenu, false)]
-public class Unfuckitizer : MonoBehaviour
+public class ThaDeathStar : MonoBehaviour
 {
 	private bool triggered = false;
 	private bool doShowDebugMessages = true;
