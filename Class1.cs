@@ -1,11 +1,9 @@
-﻿using System.Reflection;
+﻿using UnityEngine;
+using UnityEngine.SceneManagement;
+using Object = UnityEngine.Object;
 
 namespace MenuAnnihilatious;
 
-using UnityEngine;
-using UnityEngine.SceneManagement;
-using Object = UnityEngine.Object;
-using Atmosphere;
 
 [KSPAddon(KSPAddon.Startup.MainMenu, false)]
 public class Unfuckitizer : MonoBehaviour

@@ -5,15 +5,16 @@ using UnityEngine;
 namespace MenuAnnihilatious;
 
 [KSPAddon(KSPAddon.Startup.Instantly, true)]
-public class Nullifier : MonoBehaviour
+public class EVECloudsNullifier : MonoBehaviour
 {
-	public Nullifier()
+	public EVECloudsNullifier ()
 	{
-		var harmony = new Harmony("com.catsofwar.anticlouds");
+		var harmony = new Harmony("com.catsofwar.eve_clouds_nullifier");
 		harmony.PatchAll();
-		Debugzor.Show("Menu Clouds Nullified");
+		Debugzor.Show("Nullified >:]");
 	}
 }
+
 
 [HarmonyPatch(typeof(CloudsPQS), "ApplyToMainMenu")]
 class CloudsPQSPatch
