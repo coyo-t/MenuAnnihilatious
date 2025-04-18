@@ -27,6 +27,16 @@ class ShSet
 	
 }
 
+// [HarmonyPatch(typeof(GlobalEVEManager), "FixedUpdate")]
+// class Owowow
+// {
+// 	static bool Prefix(GlobalEVEManager __instance)
+// 	{
+// 		return HighLogic.LoadedScene != GameScenes.MAINMENU;
+// 	}
+// 	
+// }
+
 [HarmonyPatch(typeof(CloudsPQS), "ApplyToMainMenu")]
 class CloudsPQSPatch
 {
