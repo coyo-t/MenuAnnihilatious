@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MenuAnnihilatious")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+69532a3561df3fb8773084190ce1a671048bd282")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+248e825859197c0fa0b43d09833ade799b32b59a")]
 [assembly: System.Reflection.AssemblyProductAttribute("MenuAnnihilatious")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MenuAnnihilatious")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

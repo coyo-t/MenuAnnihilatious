@@ -14,6 +14,12 @@
 	  <Reference Include="Assembly-CSharp-firstpass">
 	    <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\KSP_x64_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
 	  </Reference>
+	  <Reference Include="EVEManager">
+	    <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData\EnvironmentalVisualEnhancements\Plugins\EVEManager.dll</HintPath>
+	  </Reference>
+	  <Reference Include="scatterer">
+	    <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData\Scatterer\Scatterer.dll</HintPath>
+	  </Reference>
 	  <Reference Include="UnityEngine">
 	    <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\KSP_x64_Data\Managed\UnityEngine.dll</HintPath>
 	  </Reference>

@@ -74,3 +74,7 @@ D:\_projects\wtfidk\modern ksp\_coyote_mods\MenuAnnihilatious\MenuAnnihilatious\
 D:\_projects\wtfidk\modern ksp\_coyote_mods\MenuAnnihilatious\MenuAnnihilatious\obj\Debug\net4.0\MenuAnni.16EE6850.Up2Date
 D:\_projects\wtfidk\modern ksp\_coyote_mods\MenuAnnihilatious\MenuAnnihilatious\obj\Debug\net4.0\MenuAnnihilatious.dll
 D:\_projects\wtfidk\modern ksp\_coyote_mods\MenuAnnihilatious\MenuAnnihilatious\obj\Debug\net4.0\MenuAnnihilatious.pdb
+D:\_projects\wtfidk\modern ksp\_coyote_mods\MenuAnnihilatious\MenuAnnihilatious\bin\Debug\net4.0\Scatterer.dll
+D:\_projects\wtfidk\modern ksp\_coyote_mods\MenuAnnihilatious\MenuAnnihilatious\bin\Debug\net4.0\EVEManager.dll
+D:\_projects\wtfidk\modern ksp\_coyote_mods\MenuAnnihilatious\MenuAnnihilatious\bin\Debug\net4.0\Utils.dll
+D:\_projects\wtfidk\modern ksp\_coyote_mods\MenuAnnihilatious\MenuAnnihilatious\bin\Debug\net4.0\ShaderLoader.dll
