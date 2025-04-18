@@ -4,4 +4,6 @@ CREATED BY - COYO_T (http://catsofwar.com)
 
 REQUIRES - HARMONY 2
 
+SOURCES - https://github.com/coyo-t/MenuAnnihilatious/
+
 LISCENCE - https://youtu.be/ynQsDFxTSU4
