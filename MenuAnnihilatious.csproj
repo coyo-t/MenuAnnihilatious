@@ -4,22 +4,38 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 		<LangVersion>12</LangVersion>
-		<TargetFramework>net4.0</TargetFramework>
+		<TargetFramework>net4.8</TargetFramework>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
 	</PropertyGroup>
 
 	<ItemGroup>
+	  <Reference Include="0Harmony">
+	    <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData\000_Harmony\0Harmony.dll</HintPath>
+	  </Reference>
 	  <Reference Include="Assembly-CSharp">
 	    <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\KSP_x64_Data\Managed\Assembly-CSharp.dll</HintPath>
 	  </Reference>
 	  <Reference Include="Assembly-CSharp-firstpass">
 	    <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\KSP_x64_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
 	  </Reference>
+	  <Reference Include="Atmosphere">
+	    <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData\EnvironmentalVisualEnhancements\Plugins\Atmosphere.dll</HintPath>
+	  </Reference>
+	  <Reference Include="EVAEnhancementsContinued">
+	    <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData\EVAEnhancementsContinued\Plugins\EVAEnhancementsContinued.dll</HintPath>
+	  </Reference>
 	  <Reference Include="EVEManager">
 	    <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData\EnvironmentalVisualEnhancements\Plugins\EVEManager.dll</HintPath>
 	  </Reference>
-	  <Reference Include="scatterer">
-	    <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData\Scatterer\Scatterer.dll</HintPath>
+
+	  <Reference Include="ParallaxContinued">
+	    <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData\ParallaxContinued\Plugins\ParallaxContinued.dll</HintPath>
 	  </Reference>
+
+	  <Reference Include="PQSManager">
+	    <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData\EnvironmentalVisualEnhancements\Plugins\PQSManager.dll</HintPath>
+	  </Reference>
+
 	  <Reference Include="UnityEngine">
 	    <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\KSP_x64_Data\Managed\UnityEngine.dll</HintPath>
 	  </Reference>

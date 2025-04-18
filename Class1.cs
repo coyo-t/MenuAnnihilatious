@@ -1,88 +1,90 @@
-﻿
+﻿using System.Reflection;
+
 namespace MenuAnnihilatious;
 
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using Scatterer;
-using EVEManager;
+using Object = UnityEngine.Object;
+using Atmosphere;
 
 [KSPAddon(KSPAddon.Startup.MainMenu, false)]
 public class Unfuckitizer : MonoBehaviour
 {
 	private bool triggered = false;
 	private bool doShowDebugMessages = true;
+
+
+	private static readonly Lazy<Scene> _scene = _createScene("MACHINE WITNESS");
+	private static Scene Scene => _scene.Value;
 	
+
 	private void LateUpdate()
 	{
-		if (!triggered)
+		// Atmosphere.CloudsPQS.
+		if (Input.GetKeyDown(KeyCode.A))
 		{
-			Debug.Log("COYOTE TIME!!!!!!");
-			var menuEnv = FindObjectOfType<MainMenuEnvLogic>();
-			
-			if (menuEnv is not null)
-			{
-				Debug.Log(menuEnv);
-				foreach (var thingArea in menuEnv.areas)
-				{
-					Debug.LogFormat("\t{0}", thingArea);
-					DestroyImmediate(thingArea);
-				}
-			}
-			
-			SearchAndDestroyzorSingle<Scatterer>("Atmosphere Scattererer");
-			SearchAndDestroyzorSingle<GlobalEVEManager>("Global EVE Manager");
-			
-			triggered = true;
+			Debugzor.Show("MACHINE WITNESS EXECUTIONALIZING");
+			var kspMenu = SceneManager.GetActiveScene();
+			SceneManager.SetActiveScene(Scene);
+			SceneManager.UnloadSceneAsync(kspMenu);
+		}
+
+		// if (triggered)
+		// {
+		// 	return;
+		// }
+		// SearchAndDestroyzor<MainMenuEnvLogic>("Main Menu", it =>
+		// {
+		// 	foreach (var thingArea in it.areas)
+		// 	{
+		// 		Debug.Log($"\t{thingArea}");
+		// 		DestroyImmediate(thingArea);
+		// 	}
+		// });
+		// SearchAndDestroyzor<Scatterer.Scatterer>("Atmosphere Scattererer");
+		// triggered = true;
+	}
+
+	private void NO_OPERATION()
+	{
+	}
+
+
+	private void RoundEmUpAndKILL<T>(String display, Action<T> destroy)
+		where T : Object
+	{
+		var things = Resources.FindObjectsOfTypeAll<T>();
+		foreach (var thing in things)
+		{
+			if (thing is null)
+				continue;
+			Debugzor.Show($"TIEM 2 DIEZOR '{display}'!!!!");
+			destroy.Invoke(thing);
 		}
 	}
 
-	private void SearchAndDestroyzorSingle<T>(String displayName)
+	private void SearchAndDestroyzor<T>(String displayName, Action<T> beforeDestroy)
 		where T : Object
 	{
 		var scat = FindObjectOfType<T>();
 		if (scat is null)
 		{
-			ShowDebugMessage($"No '{displayName}' here!");
+			Debugzor.Show($"No '{displayName}' here!");
 		}
 		else
 		{
-			ShowDebugMessage($"TIEM 2 DIEZOR '{displayName}'!!!!");
-			DestroyImmediate(scat);
-		}
-	}
-	
-	private void SDM(String what)
-	{
-		Debug.Log($"COYOTE - {what}");
-	}
-
-	private void ShowDebugMessage(object what)
-	{
-		if (doShowDebugMessages)
-		{
-			SDM(what.ToString());
-		}
-	}
-	
-	private void ShowDebugMessage (string what)
-	{
-		if (doShowDebugMessages)
-		{
-			SDM(what);
+			Debugzor.Show($"TIEM 2 DIEZOR '{displayName}'!!!!");
+			beforeDestroy.Invoke(scat);
 		}
 	}
 
-	// private Boolean GetMenu(out GameObject outs)
-	// {
-	// 	var maybeMenu = GameObject.Find("MainMenu");
-	// 	if (maybeMenu == null)
-	// 	{
-	// 		// This Is Stupid
-	// 		outs = dummyGameObject;
-	// 		return false;
-	// 	}
-	// 	
-	// 	outs = maybeMenu;
-	// 	return true;
-	// }
+	private void SearchAndDestroyzor<T>(String displayName)
+		where T : Object
+	{
+		SearchAndDestroyzor<T>(displayName, DestroyImmediate);
+	}
+
+	private static Lazy<Scene> _createScene(String name) => new(() => SceneManager.CreateScene(name));
+	
+
 }
