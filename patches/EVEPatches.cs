@@ -16,7 +16,6 @@ public class EVEPatches : MonoBehaviour
 	[HarmonyPatch(typeof(GlobalEVEManager), "Update")]
 	private class Global
 	{
-		// static bool Prefix(GlobalEVEManager __instance)
 		static bool Prefix ()
 		{
 			return HighLogic.LoadedScene != GameScenes.MAINMENU;

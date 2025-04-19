@@ -4,7 +4,7 @@ using Object = UnityEngine.Object;
 
 namespace MenuAnnihilatious;
 
-
+/*
 [KSPAddon(KSPAddon.Startup.MainMenu, false)]
 public class ThaDeathStar : MonoBehaviour
 {
@@ -57,6 +57,5 @@ public class ThaDeathStar : MonoBehaviour
 		}
 	}
 	private static Lazy<Scene> _createScene(String name) => new(() => SceneManager.CreateScene(name));
-	
-
 }
+*/
